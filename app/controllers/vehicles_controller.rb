@@ -9,7 +9,6 @@ class VehiclesController < ApplicationController
 
 
   def scrape
-    debugger
   url = 'https://www.cars.com/shopping/sedan/'
   response = VehiclesSpider.process(url)
   if response[:status] == :completed && response[:error].nil?

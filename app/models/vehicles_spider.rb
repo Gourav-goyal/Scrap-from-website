@@ -4,7 +4,6 @@ class VehiclesSpider < Kimurai::Base
   @engine = :mechanize
 
   def self.process(url)
-    debugger
     @start_urls = [url]
     self.crawl!
   end
